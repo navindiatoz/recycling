@@ -1,0 +1,28 @@
+<ion-content>
+  <div class="flex-center">
+    <form [formGroup]="form" (submit)="login1(form.value)">
+      <ion-card>
+        <ion-card-header>
+          <ion-card-title color="success" class="ion-text-center">Login</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          <ion-item>
+            <ion-label position="floating">Email</ion-label>
+            <ion-input type="email" formControlName="email"></ion-input>
+          </ion-item>
+          <app-error-message [field]="form.get('email')" error="required" color="danger" message="* Email is mandatory!.."></app-error-message>
+          <app-error-message [field]="form.get('email')" error="email" color="danger" message="* Email is Invalid!.."></app-error-message>
+
+          <ion-item>
+            <ion-label position="floating">Password</ion-label>
+            <ion-input type="password" formControlName="password"></ion-input>
+          </ion-item>
+          <app-error-message [field]="form.get('password')" error="required" color="danger" message="* Password is mandatory!.."></app-error-message>
+          <ion-button [disabled]="!form.get('email').valid" color="dark" fill="clear" size="full">Forgot email/password</ion-button>
+          <ion-button [disabled]="!form.valid" color="success" type="submit" size="full" (click)="login()">Login</ion-button>
+          <ion-button color="success" fill="clear"   size="full" type="submit" (click)="register()">Register</ion-button>
+        </ion-card-content>
+      </ion-card>
+    </form>
+  </div>
+</ion-content>
