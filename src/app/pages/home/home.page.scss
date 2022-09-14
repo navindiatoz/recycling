@@ -1,12 +1,34 @@
-ion-list{
+ion-list {
   padding: 0;
-  box-shadow:0 1px 2px 1px rgb(0 0 0 / 20%) ;
-  .money{
+  box-shadow: 0 1px 2px 1px rgb(0 0 0 / 20%);
+
+  .money {
     font-weight: bold;
   }
 }
 
-ion-card-subtitle{
+ion-card-subtitle {
   text-transform: uppercase;
   font-weight: bold;
 }
+
+.user-profile-logo {
+  height: 45px;
+  width: 45px;
+  border-radius: 50%;
+  background-color: rgb(39, 209, 194);
+  color: white;
+  font-weight: bold;
+  position: relative;
+  top: -16px;
+  .logo {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1rem;
+  }
+}
+
+

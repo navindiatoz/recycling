@@ -15,6 +15,7 @@
   "dependencies": {
     "@angular/common": "^14.0.0",
     "@angular/core": "^14.0.0",
+    "@angular/fire": "^7.4.1",
     "@angular/forms": "^14.0.0",
     "@angular/platform-browser": "^14.0.0",
     "@angular/platform-browser-dynamic": "^14.0.0",
@@ -26,6 +27,8 @@
     "@capacitor/status-bar": "4.0.1",
     "@ionic/angular": "^6.1.9",
     "@ngrx/store": "^14.3.1",
+    "@ngrx/store-devtools": "^14.3.1",
+    "firebase": "^9.9.4",
     "ionicons": "^6.0.3",
     "rxjs": "~6.6.0",
     "tslib": "^2.2.0",
@@ -43,6 +46,7 @@
     "@angular/language-service": "^14.0.0",
     "@capacitor/cli": "4.2.0",
     "@ionic/angular-toolkit": "^6.0.0",
+    "@ngrx/eslint-plugin": "^14.3.1",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "~2.0.3",
     "@types/node": "^12.11.1",
@@ -62,8 +66,7 @@
     "karma-jasmine-html-reporter": "^1.5.0",
     "protractor": "~7.0.0",
     "ts-node": "~8.3.0",
-    "typescript": "~4.7.3",
-    "@ngrx/eslint-plugin": "^14.3.1"
+    "typescript": "~4.7.3"
   },
   "description": "An Ionic project"
 }

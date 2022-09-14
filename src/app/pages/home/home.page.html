@@ -11,10 +11,13 @@
   <ion-list color="success">
     <ion-item lines="none" color="success">
       <ion-avatar slot="start">
-        <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="recycling">
+        <!-- <img src="https://i.pinimg.com/originals/51/f6/fb/51f6fb256629fc755b8870c801092942.png" alt="recycling"> -->
+        <div class="user-profile-logo">
+          <p class="logo">{{logo}}</p>
+        </div>
       </ion-avatar>
       <ion-label>
-        <h1>Navin</h1>
+        <h1 class="ion-text-capitalize">{{name}}</h1>
         <p>Gathered: <span class="money">$ 15,00</span></p>
       </ion-label>
     </ion-item>
